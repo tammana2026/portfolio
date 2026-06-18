@@ -14,12 +14,16 @@
         nav a:hover { color: #81c784; }
         .container { width: 90%; max-width: 1200px; margin: 40px auto; padding: 30px; background: #fff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
         .intro-text { text-align: center; max-width: 800px; margin: 0 auto 40px auto; }
+        .intro-text h2 { font-size: 28px; color: #1b5e20; margin-bottom: 15px; }
+        .intro-text p { font-size: 16px; color: #5a6b7c; line-height: 1.8; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 20px; }
-        .card { background: #ffffff; border: 1px solid #e1e8ed; padding: 25px; border-radius: 10px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: 0.3s; }
+        .card { background: #ffffff; border: 1px solid #e1e8ed; padding: 25px; border-radius: 10px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.3s, box-shadow 0.3s; }
         .card:hover { transform: translateY(-5px); box-shadow: 0 8px 15px rgba(0,0,0,0.08); border-color: #a5d6a7; }
-        .card h3 { color: #1b5e20; margin-top: 0; }
-        .btn { display: inline-block; background: #c62828; color: #fff; padding: 11px 22px; text-decoration: none; border-radius: 25px; font-weight: 600; font-size: 14px; margin-top: 15px; }
-        footer { text-align: center; padding: 25px; background: #1b5e20; color: #fff; margin-top: 60px; }
+        .card h3 { font-size: 20px; color: #1b5e20; margin-top: 0; margin-bottom: 12px; font-weight: 600; }
+        .card p { font-size: 14px; color: #657786; line-height: 1.6; margin-bottom: 20px; }
+        .btn { display: inline-block; background: #c62828; color: #fff; padding: 11px 22px; text-decoration: none; border-radius: 25px; font-weight: 600; font-size: 14px; letter-spacing: 0.5px; transition: background 0.3s; margin-top: auto; }
+        .btn:hover { background: #b71c1c; box-shadow: 0 4px 10px rgba(198,40,40,0.2); }
+        footer { text-align: center; padding: 25px; background: #1b5e20; color: #fff; margin-top: 60px; font-size: 14px; letter-spacing: 0.5px; }
     </style>
 </head>
 <body>
@@ -30,23 +34,32 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="https://blogspot.com" target="_blank">Reviews</a>
-        <a href="https://blogspot.com" target="_blank">About Us</a>
+        <a href="https://blogspot.comp/about-me.html" target="_blank">About Us</a>
         <a href="https://blogspot.com" target="_blank">Contact Us</a>
     </nav>
     <div class="container">
         <div class="intro-text">
             <h2>Welcome to Digifia Portfolio</h2>
-            <p>Premium health, wellness, and mindset insights tailored for a high-performance lifestyle.</p>
+            <p>At Digifia, we specialize in curating premium, scientifically-backed health insights, holistic wellness strategies, and mindset growth frameworks...</p>
         </div>
         
         <div class="grid">
-            <!-- Cards (Summarized for brevity) -->
-            <div class="card"><h3>🌿 Gluco6 Protocol</h3><p>Glycemic optimization & botanical metabolic support.</p><a href="https://blogspot.com2026/06/gluco6-review-2026-does-this-blood.html" target="_blank" class="btn">Read More</a></div>
-            <div class="card"><h3>🌙 Sleep Architecture</h3><p>30-second ritual for deep restorative sleep.</p><a href="https://blogspot.com2026/05/tired-of-tossing-and-turning-try-this.html" target="_blank" class="btn">Read More</a></div>
-            <div class="card"><h3>🧠 Cognitive Clarity</h3><p>Combat neuro-fatigue & improve focus.</p><a href="https://blogspot.com2026/06/the-real-reason-you-cant-focus-anymore.html" target="_blank" class="btn">Read More</a></div>
-            <!-- ... (Other cards can be added similarly) -->
+            <!-- CARDS: Links pointing to https://blogspot.com -->
+            <div class="card">
+                <h3>🌿 Gluco6 Protocol</h3>
+                <p>An in-depth analysis of glycemic optimization...</p>
+                <a href="https://blogspot.com2026/06/gluco6-review-2026-does-this-blood.html" target="_blank" class="btn">Access Guide</a>
+            </div>
+            <div class="card">
+                <h3>🔥 Natural Weight Management</h3>
+                <p>Simple, natural habits to speed up your internal engine...</p>
+                <a href="https://blogspot.com2026/06/the-secret-to-shedding-weight-without.html" target="_blank" class="btn">Access Guide</a>
+            </div>
+            <!-- Add more card items here -->
         </div>
     </div>
-    <footer><p>&copy; 2026 Digifia. All rights reserved.</p></footer>
+    <footer>
+        <p>&copy; 2026 Digifia. All rights reserved.</p>
+    </footer>
 </body>
 </html>
